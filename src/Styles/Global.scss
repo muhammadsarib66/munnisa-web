@@ -1,0 +1,523 @@
+$main:#212121;
+$yellow:#fff7b9;
+$blue:#0b2b63;
+$second:#646262;
+$mont:"Montserrat";
+$poppins:"Poppins";
+body{
+    color:$main;
+    margin: 0 0;
+    padding: 0 0;
+}
+img{
+    max-width: 100%
+    ;
+}
+p{
+    font-family: $mont;
+}
+.container{
+    max-width: 1100px;
+    width: 100%;
+}
+.navbar-nav.ml-auto {
+    margin-left: auto;
+    margin-right: 0;
+  }
+.navbar{
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 0 0 !important;
+    font-family: $mont;
+    font-weight: 600;
+   text-align: center !important;
+    z-index: 1000;
+}
+.nav-item{
+    margin: 0 10px;
+    select{
+        background-color: transparent !important;
+        border: 0;
+       
+      
+    }
+}
+.sticky {
+    width: 100%;
+    position: fixed !important;
+    top: 0 !important;
+    z-index: 1000;
+}
+.navbar-brand{
+    img{
+        max-height: 50px;
+    }
+}
+.nav-link:hover{
+    color: $blue;
+    &::before{
+        width: 100%;
+    }
+}
+.nav-link.active{
+    color:$blue !important;
+    &::before{
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: $blue;
+        bottom: 0;
+        border-radius: 5px;
+        left: 0;
+        transition: all ease-in-out 0.3s;
+    }
+} 
+.nav-link{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 0%;
+        background-color: $blue;
+        bottom: 0;
+        border-radius: 5px;
+        left: 0;
+        transition: all ease-in-out 0.3s;
+    }
+}
+
+// home section start 
+.main{
+    font-family: $poppins;
+ position: relative;
+    overflow: hidden !important;
+    img{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+top: 0;
+left: 0;
+    }
+    .main-details{
+        color: white;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        z-index: 1;
+        h3{
+max-width: 60%;
+line-height:40px;
+margin-bottom:20px ;
+        }
+        h6{
+            margin-bottom: 20px;
+        }
+
+    }
+
+    ul{
+        margin: 0 0;
+        padding: 0 0;
+        background-color: unset !important;
+        display: flex;
+        flex-direction: row;
+align-items: center;
+// justify-content: ;
+    }
+    li{
+        list-style: none;
+        color: unset !important;
+       
+        margin: 20px 0;
+        img{
+   
+            width: 150px !important;
+        //  height:100px !important;
+            height: unset !important;
+        }
+    }
+}
+.space{
+    padding: 30px 0;
+}
+.headings{
+    h2{
+        font-family: $poppins;
+        margin-bottom: 30px;
+    }
+    
+}.sliders{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 10px;
+    font-family: $mont;
+    font-weight: 600;
+    cursor: pointer;
+    img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    h6{
+        font-weight: 600;
+    }
+}
+.philosphy{
+    background-color: #fff7b9;
+    padding: 30px 0;
+    overflow: hidden !important;
+    img{
+        border-radius: 10px;
+    }
+}
+.Philosphy-details{
+    p{
+        color: $second;
+        font-size: 16px;
+    }
+    h5{
+        font-weight: 600;
+        margin: 20px 0;
+        
+        span{
+            font-weight: 400;
+            font-size: 16px;
+            color: $second;
+        }
+    }
+}
+.rows{
+    align-items: center;
+}
+.services{
+padding: 30px 0;    background-color: white;
+   
+}
+.servicedetails{
+    background-color: $blue;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    color: white;
+    transition: all ease-in-out 0.3s;
+    h6{
+        font-family: $poppins;
+        font-weight: 600;
+        margin-top: 10px;
+        height: 40px;
+    }
+    p{
+        font-size: 14px;
+        height: 100px;
+        max-height: 100px;
+        overflow-y:scroll;
+        
+    }
+    .iconBox{
+width: 50px;
+height: 50px;
+border-radius: 100%;
+text-align: center;
+background-color: white;
+margin: 0 auto;
+color: $main ;
+line-height: 40px;
+font-size: 30px;
+transition: all ease-in-out 0.3s;
+    }
+     &:hover{
+        background-color: $yellow;
+        color: $main;
+        .iconBox{
+            background-color: $blue;
+            color: white;
+        }
+     }
+}
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+  }
+  .singup{
+    background-color: $blue;
+ padding: 8px 20px;
+    border: 0;
+    border-radius: 10px;
+    color: white    ;
+    text-decoration: none;
+
+  }
+  .contact{
+    background-color: #f9feff;
+    padding: 30px 0;
+    font-family: $poppins;
+  }
+  .formsLayout{
+    z-index: 1;
+    max-width: 500px;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+    background-image: url(../images/personalcare.jpg);
+    background-size: cover;
+    
+    &::before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust alpha (0.5 for 50% opacity) */
+        
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 0;
+      }
+    .formdata{
+   
+     z-index: 1001; /* Increased z-index for .formdata */
+    position: relative;
+     }
+     .inpbox{
+        margin: 10px 0;
+     button{
+        width: 100%;
+        border: 0;
+        border-radius: 10px;
+        padding: 5px;
+        color: white;
+        background-color: $blue;
+        font-weight: 500;
+        font-size: 18px;
+     }
+        input{
+            width: 100%;
+            border: 0 !important;
+            padding:5px 10px;
+            border-radius: 10px;
+            z-index: 1;
+            background-color: white;
+        }
+        textarea{
+            width: 100%;
+            border: 0 !important;
+            padding:5px 10px;
+            border-radius: 10px;
+        }
+        label{color: white;}
+        select{
+            width: 100%;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+    }}
+
+    .inpbox2{
+        button{
+            width: unset !important;
+        }
+        label{color: white;}
+    }
+.footers{
+padding: 30px 0;
+background-color: $blue;
+color: white;
+}
+   
+  
+
+    :focus-visible {
+        outline: -webkit-focus-ring-color auto 0px !important;
+    }
+  
+    .footerlist{
+        overflow: hidden;
+h6{
+    font-weight: 500;
+    font-family: $poppins;
+    font-size: 20px;
+}
+p{
+    word-wrap: break-word;
+}
+ul{ 
+margin: 0 0;
+padding: 0 0;}
+li{
+    font-family: $mont;
+    list-style: none;
+    font-size: 14px;
+    a{
+        text-decoration: none;
+        color: unset;
+    }
+}
+    }
+    .socialicon{
+        
+        ul{
+            padding: 0 0;
+            li{
+                list-style: none;
+                display: inline-table;
+                margin: 0 5px;
+                font-size: 20px;
+                a{
+                    color: unset;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .copy{
+        background-color: #a8bbbf;
+        text-align: center;
+        font-size: 12px;
+    }
+
+
+
+    // home section end 
+     
+    // hire us section start 
+
+    .hireus{
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    .hireHeadings{
+        text-align: center;
+        margin-top: 20px;
+        h4{
+            color: $blue;
+        }
+        h6{
+            color: #646262;
+        }
+    }
+ 
+    .react-datepicker-wrapper {
+        display: inline-block;
+        padding: 5px !important;
+        border: 0;
+        width: 100% !important;
+        background: white;
+        border-radius: 10px;
+input{
+    width: 100% !important;
+    border: 0 !important;
+}
+    }
+    .login{
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   
+        // z-index: 1001;
+    }
+    .logininpt{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        img{
+            max-height: 50px;
+            
+        }
+    }
+    .inpbox3{
+        border: 1px solid gray;
+        border-radius: 10px;
+        margin: 10px 0;
+        display: flex;
+        flex-direction: row;
+align-items: center;
+padding: 0 10px;
+        input{
+            width: 100%;
+            border-radius: 10px;
+            padding: 5px 10px;
+            border: 0;
+        }
+    }
+    .singBtn{
+        margin: 10px 0;
+        button{
+            background-color: $blue;
+            width: 100%;
+            border: 0;
+            padding: 5px 10px;
+            border-radius: 10px;
+            color: white;
+        }
+    }
+    .forget{
+        margin: 5px 0 !important;
+        float: right !important;
+       color: $blue;
+       font-size: 12px;
+       font-weight: 600;
+       a{
+        color: unset !important;
+        text-decoration: none;
+       }
+    }
+ 
+    .overflow{
+        max-width: 100%;
+        overflow: hidden !important;
+    }
+.error {
+    color: red !important;
+}
+    // responsive
+    @media screen and (max-width: 991px) {
+        .navbar{
+            text-align: left !important;
+            padding: 10px !important;
+            .nav-item {
+                margin: 0 !important;
+                &:last-child {
+                  margin: 10px 0 !important;
+                }
+              }}
+        .nav-link::before{
+            display: none !important;
+        }
+    }
